@@ -1,0 +1,5 @@
+<%= @blog.title %><br>
+<%= @blog.content %><br>
+
+<%= link_to "Edit", edit_blog_path %>
+<%= link_to "Delete", blog_path(@blog), method: :delete, data: { confirm: "Are you sure, you want to delete this article?" } %>

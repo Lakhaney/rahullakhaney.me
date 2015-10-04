@@ -30,12 +30,13 @@
 		<div class="col-3 home_page_content">
 			<h2>Stuff I've Built</h2>
 			<hr>
-			<h3><a href="#">Codebrew</a></h3>
-			<p class="date">Friday September 10th</p>
-			<h3><a href="#">Panoramia Films</a></h3>
-			<p class="date">Friday September 10th</p>
-			<h3><a href="#">TEN Apps Challenge</a></h3>
-			<p class="date">Friday September 10th</p>
-			<h5>View all Projects <i class="fa fa-angle-double-right"></i></h5>
+			<% @projects.each do |project| %>
+				<h3><a href="#"><%= link_to project.title, project %></a></h3>
+			<p class="date"><%= project.created_at.strftime('%A, %b %d') %>th</p>
+			<% end %>
+			<h5><%= link_to projects_path do %>
+				View all Articles <i class="fa fa-angle-double-right"></i>
+				<% end %>
+			</h5>
 		</div>
 	</div>

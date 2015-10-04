@@ -21,6 +21,10 @@
     	font-size: 1rem;
     	font-weight: 600;
     	padding-top: 1em;
+    	a {
+    		text-decoration: none;
+    		color: $dark;
+    	}
 	}
 	hr {
 		width: 3em;

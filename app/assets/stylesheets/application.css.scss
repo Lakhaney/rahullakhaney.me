@@ -127,19 +127,20 @@ p, ul, ol {
 
 #upper_banner {
 	    padding: 2em 0 1em;
-    	background-color: #3D3F4F;
-    	color: white;
+    	background-color: transparent;
+    	color: #3D3F4F;
+    	border-bottom: 1px solid $border;
 	h2 {
 		font-size: 3em;
     	font-weight: 700;
     	text-align: center;
-    	color: white;
+    	color: #3D3F4F;
     	margin-bottom: 0.1em;
 	}
 	p {
 		text-align: center;
     	padding-bottom: 2em;
-    	color: white;
+    	color: #3D3F4F;
 	}
 }
 

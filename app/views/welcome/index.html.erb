@@ -1,18 +1,26 @@
 <div id="upper_banner" class="hi">
-	<h2>Code is Art</h2>
+	<h2>THINKER // DEVELOPER // PODCASTER</h2>
 	<p>Great software doesn't happen by accident.
 It's a product of deep curiosity, intensity, and experimentation.</p>
 	
 	</div>
 	<div class="wrapper wrapper_padding clearfix">
 		<div class="col-1 about home_page_content">
-			<h2>Ideology</h2>
+			<h2>My Person</h2>
 			<hr>
 			<p>
-				Fashion axe heirloom <a href="#">fingerstache Helvetica</a> Etsy Thundercats. Art party flexitarian typewriter</p>
+			Hey, I'm Rahul and I'm passionate about designing engaging, functional and well-crafted websites. 
+			Most of my skills are self-taught and all that I had learned is been extramural; outside the walls.
+			</p>
 			<p>
-			PBR&B <a href="#">bespoke</a> craft beer meditation post-ironic. Next level Pitchfork banjo ugh, sartorial <a href="#">Wes</a> Anderson keytar cornhole irony keffiyeh artisan taxidermy Odd Future. Plaid typewriter YOLO XOXO 
-			
+				I am an aspiring <%= link_to "blogger", blogs_path %>. OK, maybe this is a bit grandiose, but I do write a bit about my builds.
+				I am a metal enthusiast. If there isn’t a double-pedal bass drum, I will be upset about it.
+			</p>
+			<p>
+				If you ask me why do you arrogate yourself as something big, then my answer would be: Why should we belittle ourselves? Life is so short so live the way you want. Don’t let others decide your fortune.
+			</p>
+			<p>
+				<a href="mailto:rahul.lakhaney@gmail.com">Don't be a stranger</a>
 			</p>
 		</div>
 
@@ -20,7 +28,7 @@ It's a product of deep curiosity, intensity, and experimentation.</p>
 			<h2>Stuff I've Written</h2>
 			<hr>
 			<% @blogs.each do |blog| %>
-				<h3><a href="#"><%= link_to blog.title, blog %></a></h3>
+				<h3><%= link_to blog.title, blog %></h3>
 			<p class="date"><%= blog.created_at.strftime('%A, %b %d') %>th</p>
 			<% end %>
 			<h5><%= link_to blogs_path do %>
@@ -33,7 +41,7 @@ It's a product of deep curiosity, intensity, and experimentation.</p>
 			<h2>Stuff I've Built</h2>
 			<hr>
 			<% @projects.each do |project| %>
-				<h3><a href="#"><%= link_to project.title, project %></a></h3>
+				<h3><%= link_to project.title, project %></h3>
 			<p class="date"><%= project.created_at.strftime('%A, %b %d') %>th</p>
 			<% end %>
 			<h5><%= link_to projects_path do %>

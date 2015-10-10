@@ -126,12 +126,12 @@ p, ul, ol {
 }
 
 #upper_banner {
-	    padding: 2em 0 1em;
+	    padding: 3em 0 1em;
     	background-color: transparent;
     	color: #3D3F4F;
     	border-bottom: 1px solid $border;
 	h2 {
-		font-size: 3em;
+		font-size: 2em;
     	font-weight: 700;
     	text-align: center;
     	color: #3D3F4F;
@@ -223,6 +223,48 @@ input[type="submit"], .button {
 	margin: 4em 0 0 0;
 	text-align: center;
 }
+
+
+#about_page {
+	h1 {
+		text-align: center;
+		margin-top: 0em;
+	}
+}
+
+#about_title {
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+	padding: 2em 0 1em;
+	h1 {
+		font-size: 2.5em;
+		margin-bottom: 0.1em;
+	}
+	p {
+		font-size: 1.5em;
+	}
+}
+
+.about_page {
+	hr {
+		width: 3em;
+		display: block;
+		height: 2px;
+		border: 0;
+		border-top: 2px solid $highlight;
+		margin: 2rem 0;
+	}
+	p {
+		font-size: 1em;
+		font-weight: 700;
+		a {
+			text-decoration: none;
+			color: $highlight;
+		}
+	}
+	padding: 4em;
+}
+
 
 @import 'welcome';
 @import 'posts_projects';

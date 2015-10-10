@@ -93,10 +93,6 @@ p, ul, ol {
 		text-decoration: none;
 		color: $dark;
 		float: left;
-		&:hover {
-			color: $highlight;
-			border: 2px solid $highlight;
-			transition: color, border 0.4s;
 		}
 	}
 	nav {

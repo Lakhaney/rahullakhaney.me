@@ -245,24 +245,34 @@ input[type="submit"], .button {
 	}
 }
 
-.about_page {
-	hr {
-		width: 3em;
-		display: block;
-		height: 2px;
-		border: 0;
-		border-top: 2px solid $highlight;
-		margin: 2rem 0;
+#about_page {
+	.col-1 {
+		width: 40%;
+		padding: 0 5% 0 2.5%;
 	}
+	.col-2, .col-3 {
+		width: 30%;
+		padding: 0 2.5%;
+	}
+	li {
+		a {
+			text-decoration: none;
+			color: $highlight;
+			font-weight: 700;
+		}
+	}
+}
+.nothing_to_write {
 	p {
 		font-size: 1em;
-		font-weight: 700;
+		font-weight: 600;
+		padding-left: 5em;
+    	padding-bottom: 4em;
 		a {
 			text-decoration: none;
 			color: $highlight;
 		}
 	}
-	padding: 4em;
 }
 
 

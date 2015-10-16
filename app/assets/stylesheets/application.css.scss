@@ -212,7 +212,6 @@ input[type="submit"], .button {
 	padding: 1em 2em;
 	border-radius: 2px;
 	&:hover {
-		background: $highlight;
 		color: $white;
 		transition: color, border, background 0.4s;
 	}

@@ -10,6 +10,9 @@
 	<%= markdown @project.description %>
 	<div class="button_wrapper">
 		<a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a>
+		<% if !@project.github_link.empty? %>
+		<a href="<%= @project.github_link %>" class="project_button" target="_blank"><i class="fa fa-github"></i> Visit Repo</a>
+		<% end %>
 	</div>
 	<hr>
 	</div>
